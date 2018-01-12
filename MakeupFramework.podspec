@@ -54,7 +54,7 @@ s.source     = {:git => 'https://github.com/jyotigroomefy/MakeupFramework.git' }
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
 
-  s.source_files  = "MakeupFramework", "MakeupFramework/**/*.{h,m}"
+  s.source_files  = "MakeupFramework", "MakeupFramework/**/*.{h}"
   #s.exclude_files = "MakeupFramework/Exclude"
 
   #s.public_header_files = "MakeupFramework/**/*.h"
