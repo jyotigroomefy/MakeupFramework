@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
-   s.platform     = :ios
+   s.platform     = :ios, "10.0"
   # s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
 
  # s.source       = { :git => "http://EXAMPLE/MakeupFramework.git", :tag =>  "#{s.version}" }
 
-s.source     = {:path => 'https://github.com/jyotigroomefy/MakeupFramework.git' }
+s.source     = {:git => 'https://github.com/jyotigroomefy/MakeupFramework.git' }
 
 
 
