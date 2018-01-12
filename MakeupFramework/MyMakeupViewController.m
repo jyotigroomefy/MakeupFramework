@@ -1,26 +1,22 @@
 //
-//  MakeupViewController.m
+//  MyMakeupViewController.m
 //  MakeupFramework
 //
 //  Created by IndianRenters on 12/01/18.
 //  Copyright © 2018 Groomefy. All rights reserved.
 //
 
+#import "MyMakeupViewController.h"
 #import "MakeupViewController.h"
+@interface MyMakeupViewController ()
 
-@interface MakeupViewController ()
-{
-    
-}
-@property(nonatomic,weak)UILabel *lblName;
 @end
 
-@implementation MakeupViewController
+@implementation MyMakeupViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,11 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setLableName:(NSString *)strLbl
-{
-    //self.lblName.text=strLbl;
-}
 
++(void)performSegueView:(UIViewController *)viewcon
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"MakeupFramework" ofType:@"bundle"];
+    NSBundle *resourcesBundle = [NSBundle bundleWithPath:path];
+    UIStoryboard *makupStoryboard = [UIStoryboard storyboardWithName:@"MakeupStoryboard" bundle:resourcesBundle];
+    MyMakeupViewController *ViewMakup = [makupStoryboard instantiateInitialViewController];
+    [viewcon presentViewController:ViewMakup animated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 
